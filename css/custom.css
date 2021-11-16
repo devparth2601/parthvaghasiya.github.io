@@ -1,0 +1,64 @@
+.about-section .about-content div.btn-download.animated {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  margin-left: auto;
+}
+
+.about-section .about-content div.btn-download {
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  max-width: 315px;
+  transition: all 1.2s ease 0.8s;
+}
+@media (max-width: 1399px) {
+  .about-section .about-content div.btn-download {
+    max-width: 450px;
+  }
+}
+@media (max-width: 991px) {
+  .about-section .about-content div.btn-download {
+    max-width: 100%;
+  }
+}
+
+ @media (max-width: 575px) {
+  div.animate-me.btn-download.animated {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .cv-btn{
+    background: #f43534 !important;
+    color:aliceblue;
+    opacity: 0.5;
+
+  }
+}
+
+.animate-me.btn-download.animated:hover button {
+    background: white;
+    animation: button_pulse 1.5s infinite cubic-bezier(.25, 0, 0, 1);
+    color:black;
+
+  } 
+  .portfolio-img img{
+    width: 100%;
+    opacity: 0.6;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+  }
+
+
+  .portfolio-img:hover img {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+
+.skill-img {
+  max-height: 100px;
+}
